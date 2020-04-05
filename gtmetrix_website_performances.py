@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
 
 
-class SnehilAssignment:
+class WebsitePerformanceCalculator:
 
     def read_excel(self):
         df = pd.read_excel("C:\\Users\\Pranjul Mishra\\Desktop\\URL_list.xlsx")
@@ -68,7 +68,7 @@ class SnehilAssignment:
         self.write_excel(df)
 
 
-sa = SnehilAssignment()
+sa = WebsitePerformanceCalculator()
 driverLocation = "C:\\Pranjul\\webdriver\\chromedriver.exe"
 os.environ['webdriver.driver.chrome'] = driverLocation
 driver = webdriver.Chrome(driverLocation)
