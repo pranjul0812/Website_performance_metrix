@@ -15,7 +15,6 @@ class WebsitePerformanceCalculator:
         df.drop(df.columns[0], axis=1, inplace=True)
         header = df.iloc[1]
         new_df = pd.DataFrame(df.values[2:], columns=header)
-        print(new_df)
         return new_df
 
     def write_excel(self, df, path=""):
